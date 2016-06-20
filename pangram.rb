@@ -10,7 +10,7 @@ class Pangram
         ALPHABET.each do |letter|
             unless str_array.include?(letter)
                 result = false
-                break
+                # break surprisingly having break here makes the test run slower
             end
         end
         result
